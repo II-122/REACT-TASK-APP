@@ -35,9 +35,9 @@ const BoardList : FC<TBoardListProps> = ({
 
   return (
     <div className={container}>
-        <div className={title}>
-          게시판 : 
-        </div>
+      <div className={title}>
+        게시판 : 
+      </div>
       {boardArray.map((board, index) => (
         <div key={board.boardId}
           onClick={() => setActiveBoardId(boardArray[index].boardId)}
