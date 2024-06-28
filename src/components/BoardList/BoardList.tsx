@@ -49,7 +49,7 @@ const BoardList : FC<TBoardListProps> = ({
               },
               {
                 [boardItem] :
-                boardArray.findIndex(b => b.boardId ===activeBoardId) !== index
+                boardArray.findIndex(b => b.boardId === activeBoardId) !== index
               }
             )
           }

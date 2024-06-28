@@ -1,7 +1,7 @@
 import { style } from "@vanilla-extract/css";
 import { vars } from "../../../App.css";
 
-export const sideFrom = style({
+export const sideForm = style({
     display : "flex",
     alignItems : "center",
     marginLeft : "auto"

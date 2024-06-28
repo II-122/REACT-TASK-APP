@@ -1,6 +1,6 @@
 import React, { ChangeEvent, FC, useRef, useState } from 'react';
 import { FiCheck } from 'react-icons/fi';
-import { icon } from './SideForm.css';
+import { icon, input, sideForm } from './SideForm.css';
 import { useTypedDispatch } from '../../../hooks/redux';
 import { v4 as uuidv4 } from 'uuid';
 import { addBoard } from '../../../store/slices/boardsSlice';
@@ -50,8 +50,9 @@ const SideForm : FC<TSideFormProps> = ({
   };
 
   return (
-    <div>
+    <div className={sideForm}>
       <input
+        className={input}
         autoFocus
         // ref={inputRef}
         type='text'
