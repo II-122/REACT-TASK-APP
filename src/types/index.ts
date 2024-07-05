@@ -1,9 +1,21 @@
 export interface ITask {
     taskId : string;
+    // taskStartTime : time->hour ?string
+    // taskEndTime : time->hour ?string
     taskName : string;
     taskDescription : string;
     taskOwner : string;
+    // taskIsDone : boolean;
 }
+
+// export interface ITodoList {
+//     taskId : string;
+//     taskEndDay : Date?String;
+//     taskName : string;
+//     taskDescription : string;
+//     taskOwner : string;
+//     todoListIsDone : boolean;
+// }
 
 export interface ILogItem {
     logId : string;
